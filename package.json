@@ -13,6 +13,8 @@
   },
   "devDependencies": {
     "typescript": "latest",
+    "eslint": "latest",
+    "eslint-config-react-app": "latest",
     "react-refresh": "0.10.0"
   }
 }
