@@ -1,8 +1,11 @@
 import { marked } from 'marked';
-import { readFileSync, writeFile, writeFileSync } from 'fs';
+import { readFileSync, writeFileSync } from 'fs';
 
-const md = readFileSync('./input.md', { encoding: 'utf-8' });
-const tokens = marked.lexer(md);
+const res = await fetch(
+  'https://raw.githubusercontent.com/rockerBOO/awesome-neovim/main/README.md'
+);
+const mdStr = await res.text();
+const tokens = marked.lexer(mdStr);
 
 let closestL3 = undefined;
 const re = /^-?\ ?\[(.*)\]\((.*)\)\ - (.*)/;
