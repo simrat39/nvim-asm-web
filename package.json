@@ -12,9 +12,10 @@
     ]
   },
   "devDependencies": {
-    "typescript": "latest",
+    "@types/react": "^18.0.15",
     "eslint": "latest",
     "eslint-config-react-app": "latest",
-    "react-refresh": "0.10.0"
+    "react-refresh": "0.10.0",
+    "typescript": "latest"
   }
 }
