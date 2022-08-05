@@ -1,5 +1,9 @@
+import './styles/colors.css'
 import "./App.css";
+
 import useNvimPlugins from "./hooks/useNvimPlugins";
+import Heading from './Heading';
+import Plugin from './Plugin';
 
 function App() {
   const data = useNvimPlugins();
@@ -12,14 +16,11 @@ function App() {
           i: number
         ) => {
           return (
-            <h2 key={i}>
-              {category}
-              <ul>
+            <Heading key={i} title={category}>
                 {plugins.map((plugin) => {
-                  return <h6 key={plugin.gh}>{plugin.gh}</h6>;
+                  return <Plugin key={plugin.gh} title={plugin.gh} desc={plugin.desc}></Plugin>
                 })}
-              </ul>
-            </h2>
+            </Heading>
           );
         }
       )}

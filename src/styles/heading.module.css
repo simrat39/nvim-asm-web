@@ -1,0 +1,12 @@
+.heading {
+  font-weight: bold;
+  letter-spacing: 1.1;
+  color: var(--nord6);
+  margin: 20px 0px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
