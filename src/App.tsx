@@ -6,8 +6,15 @@ import Heading from './Heading';
 import Plugin from './Plugin';
 
 function App() {
-  const data = useNvimPlugins();
+  const [loading, data] = useNvimPlugins();
 
+  if (loading) {
+      return (
+      <div className='App'>
+      <div>Loading...</div>
+      </div>
+      )
+    }
   return (
     <div className="App">
       {Object.entries(data).map(
