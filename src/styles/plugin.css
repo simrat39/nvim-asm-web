@@ -1,12 +1,19 @@
 .pluginCard {
   background-color: var(--nord1);
   border-radius: 12px;
-  padding: 17.5px;
+  padding: 15px;
   max-width: 300px;
   word-wrap: break-word;
+
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
 }
 
 .pluginTitle {
@@ -17,4 +24,19 @@
 
 .pluginDesc {
   color: var(--nord5);
+}
+
+.end {
+  display: flex;
+  justify-content: end;
+}
+
+.copy {
+  width: 35px;
+  height: 35px;
+  background-color: var(--nord3);
+  color: var(--nord13);
+  outline: none;
+  border: none;
+  border-radius: 4px;
 }
