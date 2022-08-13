@@ -17,9 +17,9 @@ function App() {
         ) => {
           return (
             <Heading key={i} title={category}>
-                {plugins.map((plugin) => {
-                  return <Plugin key={plugin.gh} title={plugin.gh} desc={plugin.desc}></Plugin>
-                })}
+              {plugins.map((plugin) => {
+                return <Plugin key={plugin.gh} title={plugin.gh} desc={plugin.desc}></Plugin>
+              })}
             </Heading>
           );
         }
